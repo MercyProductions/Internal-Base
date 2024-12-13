@@ -10,6 +10,7 @@
 #include <map>
 #include <thread>
 #include <atomic>
+#include "gui.h"
 
 #pragma comment(lib, "Ws2_32.lib")
 #pragma comment(lib, "detours.lib")
@@ -277,6 +278,9 @@ namespace Interceptor
         AllocateConsole();
 
         Logger::Log("Setup", "Debug mode is enabled. Setting up interceptors...");
+
+        GUI::GetInstance().Setup();
+
         WinsockInterceptor::Initialize();
         DriverInterceptor::Initialize();
 
