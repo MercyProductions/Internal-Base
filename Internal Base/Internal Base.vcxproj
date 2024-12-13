@@ -164,6 +164,7 @@
     <ClInclude Include="libs\imgui\imstb_textedit.h" />
     <ClInclude Include="libs\imgui\imstb_truetype.h" />
     <ClInclude Include="src\features\gui.h" />
+    <ClInclude Include="src\features\external-gui\gui.h" />
     <ClInclude Include="src\framework.h" />
     <ClInclude Include="libs\memory\memory.h" />
     <ClInclude Include="src\features\packet.h" />
@@ -198,6 +199,9 @@
     </ClCompile>
     <ClCompile Include="src\features\gui.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="src\features\external-gui\gui.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../../pch.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="src\features\packet.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>

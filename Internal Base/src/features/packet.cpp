@@ -279,7 +279,7 @@ namespace Interceptor
 
         Logger::Log("Setup", "Debug mode is enabled. Setting up interceptors...");
 
-        GUI::GetInstance().Setup();
+        //GUI::GetInstance().Setup();
 
         WinsockInterceptor::Initialize();
         DriverInterceptor::Initialize();
