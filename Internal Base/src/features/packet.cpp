@@ -1,4 +1,3 @@
-#include "../../pch.h"
 #include <winsock2.h>
 #include <windows.h>
 #include <ws2tcpip.h>
@@ -11,6 +10,7 @@
 #include <thread>
 #include <atomic>
 #include "gui.h"
+#include "../../libs/kiero/kiero.h"
 
 #pragma comment(lib, "Ws2_32.lib")
 #pragma comment(lib, "detours.lib")
